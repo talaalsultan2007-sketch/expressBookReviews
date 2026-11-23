@@ -121,10 +121,7 @@ public_users.get('/review/:isbn', function (req, res) {
     });
 
 });
-
 const axios = require('axios');
-
-// Get all books using async/await
 
 async function getAllBooks() {
 
@@ -133,8 +130,6 @@ async function getAllBooks() {
     return response.data;
 
 }
-
-// Get book by ISBN using async/await
 
 async function getBookByISBN(isbn) {
 
@@ -148,40 +143,38 @@ async function getBookByISBN(isbn) {
 
 }
 
-// Get books by author using async/await
-
 async function getBooksByAuthor(author) {
 
     const response = await axios.get(
 
        
-return response.data;
-
-}
-
-// Get book by ISBN using async/awai
-    );
 
     return response.data;
 
 }
 
-// Get books by title using async/await
+async function getBookByISBN(i
+    );
+
+    return response.data;
+
+}
 
 async function getBooksByTitle(title) {
 
     const response = await axios.get(
 
        
-   return response.data;
-
-}
-
-// Get book by ISBN using async
-    );
+);
 
     return response.data;
 
 }
 
+async function getBookByIS
+    );
+
+    return response.data;
+
+}
 module.exports.general = public_users;
